@@ -1,0 +1,130 @@
+:root {
+    --projectblack: black;
+    --projectgrey: grey;
+    --projectwhite: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Canvas styles Start */
+#canvas1 {
+    background: blue;
+}
+/* Canvas styles End */
+
+
+/* Nav styles Start */
+.navContainer {
+    width: 100%;
+    background-color: var(--projectgrey);
+}
+.navBar {
+    display: grid;
+    /* essentially saying to give logo 0.2fr of space and nav items 1fr of space */
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+#navBarLogo {
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navMenu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+.navLinks {
+    color: var(--projectwhite);
+    text-decoration: none;
+}
+.navLinks:hover {
+    border-bottom: solid black;
+    transition: all 0.2s ease-out;
+}
+
+.menuToggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--projectwhite);
+}
+/* Nav styles End */
+
+
+/* Media queries Start */
+@media screen and (max-width: 768px) {
+    .navContainer {
+        position: relative;
+    }
+    .navMenu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--projectblack);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    #navBarLogo {
+        margin-left: 20px;
+
+    }
+    .navMenu.active {
+        background: var(--projectgrey);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .navLinks {
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+    .navLinks:hover {
+        background-color: var(--projectgrey);
+        color: var(--projectwhite);
+        transition: all 0.4s ease-out;
+    }
+
+    .navBar {
+        width: 100%;
+    }
+    #mobileMenu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .menuToggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+    .menuToggle:hover {
+        cursor: pointer;
+    }
+    #mobileMenu.isActive .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobileMenu.isActive .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobileMenu.isActive .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* Media queries End */
