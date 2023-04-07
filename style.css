@@ -6,11 +6,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Canvas styles Start */
 #canvas1 {
-    background: blue;
+    background: black;
+    top: 0;
+    left: 0;
 }
 /* Canvas styles End */
 
@@ -44,13 +48,18 @@
     justify-self: end;
 }
 .navLinks {
+    padding: 6px;
     color: var(--projectwhite);
     text-decoration: none;
+    background: linear-gradient(0deg, black, black) no-repeat right bottom / 0 var(--projectblack);
+    transition: background-size 500ms;
+    --projectblack: 100%;
 }
-.navLinks:hover {
-    border-bottom: solid black;
-    transition: all 0.2s ease-out;
+.navLinks:where(:hover, :focus-visible) {
+    background-size: 100% var(--projectblack);
+    background-position-x: left;
 }
+
 
 .menuToggle .bar {
     width: 25px;
@@ -64,6 +73,7 @@
 
 /* Media queries Start */
 @media screen and (max-width: 768px) {
+    /* Nav styles Start */
     .navContainer {
         position: relative;
     }
@@ -126,5 +136,8 @@
     #mobileMenu.isActive .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    /* Nav styles End */
+
+
 }
 /* Media queries End */
