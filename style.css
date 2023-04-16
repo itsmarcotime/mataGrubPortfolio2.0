@@ -9,10 +9,13 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
-
+body {
+    overflow: hidden;
+    background: black;
+}
 /* Canvas styles Start */
 #canvas1 {
-    background: black;
+    /* position: absolute; */
     top: 0;
     left: 0;
 }
