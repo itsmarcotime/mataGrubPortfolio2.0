@@ -15,9 +15,11 @@ body {
 }
 /* Canvas styles Start */
 #canvas1 {
-    /* position: absolute; */
+    position: relative;
+    height: 500px;
     top: 0;
     left: 0;
+    overflow: auto;
 }
 /* Canvas styles End */
 
@@ -72,6 +74,14 @@ body {
     background: var(--projectwhite);
 }
 /* Nav styles End */
+
+.hello {
+    background: pink;
+    padding: 20px;
+    top: 100%;
+    left: 100%;
+    margin: 30px;
+}
 
 
 /* Media queries Start */
