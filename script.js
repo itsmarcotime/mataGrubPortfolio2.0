@@ -21,14 +21,14 @@ window.addEventListener('load', function() {
     const mouse = {
         x: null,
         y: null,
-        radius: 250
+        radius: 180
     }
 
     this.window.addEventListener('mousemove', (e) => {
         mouse.x = e.x;
         // might need to think of some varible other than 80 that will keep track of screen movement 
         // to keep mouse animations acurate
-        mouse.y = e.y - 80;
+        mouse.y = e.y;
     });
 
     ctx.fillStyle = 'white';
