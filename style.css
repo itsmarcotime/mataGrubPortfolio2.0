@@ -1,30 +1,39 @@
+/* :root {
+    --projectblack: rgb(47, 55, 58);
+    --projectwhite: rgb(209, 205, 205);
+    --projectgreen: rgb(12, 218, 116);
+} */
 :root {
-    --projectblack: black;
-    --projectgrey: grey;
-    --projectwhite: white;
+    --projectblack: rgb(2, 10, 19);
+    --projectblack2: rgb(8, 15, 24);
+    --projectwhite: rgb(225, 225, 225);
+    --projectgreen: rgb(53, 199, 89);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Blorado', sans-serif;
+    font-size: .98em;
+    font-weight: 100;
 }
 body {
-    background: black;
+    background: var(--projectblack)
 }
 /* Canvas styles Start */
-#canvas1 {
+/* #canvas1 {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+    
 }
 .canvasWall {
-    background: pink;
+    background: var(--projectblack);
     height: 800px;
     margin-bottom: 100px;
-}
+} */
 /* Canvas styles End */
 
 
@@ -32,8 +41,9 @@ body {
 .navContainer {
     width: 100%;
     background: none;
-    position: absolute;
+    
     z-index: 999999;
+    box-shadow: 0px 3px 5px rgb(26, 25, 25);
 }
 .navBar {
     display: grid;
@@ -59,44 +69,90 @@ body {
     justify-self: end;
 }
 .navLinks {
-    padding: 6px;
+    /* background: linear-gradient(0deg, rgb(37, 37, 37), rgb(37, 37, 37)) no-repeat right bottom / 0 var(--projectblack);
+    transition: background-size 500ms;
+    --projectblack: 100%; */
     color: var(--projectwhite);
     text-decoration: none;
-    background: linear-gradient(0deg, black, black) no-repeat right bottom / 0 var(--projectblack);
-    transition: background-size 500ms;
-    --projectblack: 100%;
+    position: relative;
 }
-.navLinks:where(:hover, :focus-visible) {
+.navLinks:hover {
+    color: var(--projectwhite);
+}
+.navLinks::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.8px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--projectgreen);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;;
+}
+.navLinks:hover::before {
+    transform: scaleX(1);
+}
+/* .navLinks:where(:hover, :focus-visible) {
     background-size: 100% var(--projectblack);
     background-position-x: left;
-}
+    border-radius: 4px;
+    color: var(--projectgreen);
+    text-shadow: 0px 0px 5px var(--projectgreen);
+} */
+
 .menuToggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: var(--projectwhite);
 }
 /* Nav styles End */
 
+
 /* Welcome start */
 .welcomeBox {
-    background: pink;
-    padding: 20px;
-    top: 100%;
-    left: 100%;
-    margin: 30px;
+    background: var(--projectblack);
+    color: var(--projectwhite);
+    
+}
+.textbox {
+    border: black solid 5px;
+    padding: 30px;
+    border-radius: 15px;
+}
+.nameText {
+    color: var(--projectgreen);
 }
 /* Welcome end */
 
+
 /* footer start*/
-footer {
-    background: pink;
-    padding: 20px;
-    top: 100%;
-    left: 100%;
-    margin: 30px;
+.footer-box {
+    background-color: var(--projectblack);
+    position: absolute;
+    list-style: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 3px 3px 5px rgb(26, 25, 25);
 }
+.footer-text {
+    text-decoration: none;
+}
+.footer-text a {
+    text-decoration: none;
+    color: var(--projectwhite);
+}
+.footer-text a:hover {
+    color: rgb(224, 167, 101);
+}
+.copyrightbox {
+    color: var(--projectwhite);
+}
+
 /* footer end */
 
 
