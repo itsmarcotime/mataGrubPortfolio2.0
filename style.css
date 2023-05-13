@@ -15,7 +15,7 @@
     box-sizing: border-box;
     font-family: 'Blorado', sans-serif;
     font-size: .98em;
-    font-weight: 100;
+    font-weight: lighter;
 }
 body {
     background: var(--projectblack)
