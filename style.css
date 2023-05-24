@@ -24,7 +24,7 @@ body {
     background: none;
     
     z-index: 999999;
-    box-shadow: 0px 3px 5px rgb(26, 25, 25);
+    box-shadow: 0px 2px 4px rgb(0, 0, 0);
 }
 .navBar {
     display: grid;
@@ -46,7 +46,6 @@ body {
     grid-template-columns: repeat(5, auto);
     list-style: none;
     text-align: center;
-    width: 70%;
     justify-self: end;
 }
 .navLinks {
@@ -104,11 +103,22 @@ text:hover {
 
 
 /* Welcome start */
+.textbox {
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2, 3)); */
+    justify-content: center;
+}
+#welcome1 {
+    
+}
 #mataGrub {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     animation: fill 0.5s ease forwards 3.5s;
+    width: 300px;
 }
 #mataGrub path:nth-child(1) {
     stroke-dasharray: 752;
@@ -163,16 +173,13 @@ text:hover {
         fill:rgb(53, 199, 89)
     }
 }
-
-.welcomeBox {
-    background: var(--projectblack);
-    color: var(--projectwhite);
-    
+.greetings {
+    font-size: 20px;
+    margin-top: 63px;
+    margin-right: 10px;
 }
-.textbox {
-    border: black solid 5px;
-    padding: 30px;
-    border-radius: 15px;
+.welcomeBox {
+    color: var(--projectwhite);
 }
 .nameText {
     color: var(--projectgreen);
@@ -188,7 +195,7 @@ text:hover {
     padding: 15px;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 3px 3px 5px rgb(26, 25, 25);
+    box-shadow: 0px 3px 3px 5px rgb(0, 0, 0);
 }
 .footer-text {
     text-decoration: none;
