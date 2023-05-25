@@ -49,9 +49,6 @@ body {
     justify-self: end;
 }
 .navLinks {
-    /* background: linear-gradient(0deg, rgb(37, 37, 37), rgb(37, 37, 37)) no-repeat right bottom / 0 var(--projectblack);
-    transition: background-size 500ms;
-    --projectblack: 100%; */
     color: var(--projectwhite);
     text-decoration: none;
     position: relative;
@@ -75,13 +72,6 @@ body {
 .navLinks:hover::before {
     transform: scaleX(1);
 }
-/* .navLinks:where(:hover, :focus-visible) {
-    background-size: 100% var(--projectblack);
-    background-position-x: left;
-    border-radius: 4px;
-    color: var(--projectgreen);
-    text-shadow: 0px 0px 5px var(--projectgreen);
-} */
 
 .menuToggle .bar {
     width: 25px;
@@ -103,18 +93,19 @@ text:hover {
 
 
 /* Welcome start */
+.green {
+    color: var(--projectgreen);
+}
 .textbox {
-    height: 600px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2, 3)); */
     justify-content: center;
 }
-#welcome1 {
-    
+#welcome3 {
+    width: 100%;
+    padding-left: 21%;
 }
 #mataGrub {
     animation: fill 0.5s ease forwards 3.5s;
@@ -180,9 +171,28 @@ text:hover {
 }
 .welcomeBox {
     color: var(--projectwhite);
+    
 }
-.nameText {
-    color: var(--projectgreen);
+.homeText {
+    text-align: left;
+    font-size: 17px;
+    padding: 100px;
+}
+.greenLink {
+    color: var(--projectwhite);
+    text-decoration: none;
+    border-bottom: 1px solid var(--projectgreen);
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(0deg, var(--projectgreen), var(--projectgreen)) no-repeat right bottom / 0 var(--projectblack);
+    transition: background-size 500ms;
+    --projectblack: 100%;
+}
+.greenLink:where(:hover, :focus-visible) {
+    background-size: 100% var(--projectblack);
+    background-position-x: left;
+    border-radius: 3px;
+    color: var(--projectblack2);
 }
 /* Welcome end */
 
