@@ -28,7 +28,6 @@ body {
 }
 .navBar {
     display: grid;
-    /* essentially saying to give logo 0.2fr of space and nav items 1fr of space */
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
     height: 80px;
@@ -67,12 +66,11 @@ body {
     left: 0;
     background-color: var(--projectgreen);
     transform: scaleX(0);
-    transition: transform 0.3s ease;;
+    transition: transform 0.3s ease;
 }
 .navLinks:hover::before {
     transform: scaleX(1);
 }
-
 .menuToggle .bar {
     width: 25px;
     height: 3px;
@@ -199,28 +197,58 @@ text:hover {
 
 /* footer start*/
 .footer-box {
-    background-color: var(--projectblack);
-    position: absolute;
+    color: var(--projectwhite);
     list-style: none;
     padding: 15px;
     width: 100%;
     text-align: center;
     box-shadow: 0px 3px 3px 5px rgb(0, 0, 0);
 }
-.footer-text {
-    text-decoration: none;
+.footerLi {
+    padding: 5px;
 }
-.footer-text a {
+.footerLi a {
+    color: var(--projectwhite);
     text-decoration: none;
+    position: relative;
+}
+.footerLi a:hover {
     color: var(--projectwhite);
 }
-.footer-text a:hover {
-    color: rgb(224, 167, 101);
+.footerLi a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.8px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--projectgreen);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
-.copyrightbox {
+.footerLi a:hover::before {
+    transform: scaleX(1);
+}
+#copySymbol {
+    color: var(--projectgreen);
+}
+.footContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.foot1, .foot2, .foot3 {
+    margin: 20px;
+    font-size: 25px;
+}
+.foot1 a, .foot2 a, .foot3 a {
     color: var(--projectwhite);
 }
-
+.foot1 a:hover, .foot2 a:hover, .foot3 a:hover {
+    color: var(--projectgreen);
+}
 /* footer end */
 
 
