@@ -253,13 +253,45 @@ text:hover {
 
 
 /* about page start */
+.aboutTitle {
+    color: var(--projectwhite);
+    font-size: 33px;
+    font-weight: bold;
+    padding: 30px;
+}
+.greenTitle {
+    color: var(--projectgreen);
+    font-weight: bold;
+}
 .aboutText {
     color: var(--projectwhite);
-    text-align: center;
-    font-size: 15px;
-    padding: 100px;
-    padding-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    line-height: 2;
 }
+.ulExp {
+    list-style: none;
+}
+.expText {
+    color: var(--projectwhite);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+}
+.paraText {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 2;
+}
+.expTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* about page end */
 
 
