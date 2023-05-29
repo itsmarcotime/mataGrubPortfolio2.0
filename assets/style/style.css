@@ -252,9 +252,15 @@ text:hover {
 /* footer end */
 
 
-
-
-
+/* about page start */
+.aboutText {
+    color: var(--projectwhite);
+    text-align: center;
+    font-size: 15px;
+    padding: 100px;
+    padding-top: 30px;
+}
+/* about page end */
 
 
 /* Media queries Start */
