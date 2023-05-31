@@ -21,16 +21,16 @@ body {
 /* Scroll Bar Start */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  ::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-thumb {
     background: var(--projectgreen);
     border-radius: 10px;
-  }
-/* Scroll Bar Start */
+}
+/* Scroll Bar End */
 
 /* Nav styles Start */
 .navContainer {
@@ -259,6 +259,7 @@ text:hover {
 }
 .foot1 a, .foot2 a, .foot3 a {
     color: var(--projectwhite);
+    transition: .3s ease all;
 }
 .foot1 a:hover, .foot2 a:hover, .foot3 a:hover {
     color: var(--projectgreen);
@@ -305,8 +306,56 @@ text:hover {
     font-weight: bold;
     font-size: 20px;
 }
-
 /* about page end */
+
+
+/* Work page Start */
+.panel, .panel0, .panel1 {
+    --slide-panel-background-color: var(--projectblack);
+}
+#btn, #btn0, #btn1 {
+    cursor: pointer;
+}
+.workContainer {
+    width: 40vw;
+}
+#closeBtn, #closeBtn0, #closeBtn1 {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--projectgreen);
+    padding: 5px;
+}
+.workImg {
+    padding: 50px;
+    text-align: center;
+}
+.workTitle {
+    text-align: center;
+    color: var(--projectwhite);
+    font-size: 20px;
+    font-weight: bold;
+}
+.workText {
+    text-align: center;
+    padding: 10px;
+    color: var(--projectwhite);
+    font-size: 15px;
+}
+.githubBtn {
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* Work page End */
+
 
 
 /* Media queries Start */
