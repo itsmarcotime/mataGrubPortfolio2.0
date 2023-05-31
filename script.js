@@ -15,12 +15,14 @@ for (let i = 0; i < mataGrub.length; i++) {
 }
 
 //work page stuff 
-const buttons = [document.querySelector('#btn'), document.querySelector('#btn0'), document.querySelector('#btn1')];
+const buttons = [document.querySelector('#btn'), document.querySelector('#btn0'), document.querySelector('#btn1'),
+document.querySelector('#btn2')];
 
-const panels = [document.querySelector('.panel'), document.querySelector('.panel0'), document.querySelector('.panel1')];
+const panels = [document.querySelector('.panel'), document.querySelector('.panel0'), document.querySelector('.panel1'),
+document.querySelector('.panel2')];
 
 const closeBtns = [document.querySelector('#closeBtn'), document.querySelector('#closeBtn0'), 
-document.querySelector('#closeBtn1')];
+document.querySelector('#closeBtn1'), document.querySelector('#closeBtn2')];
 
 buttons.forEach((button, i) => {
     button.addEventListener('click', () => {
