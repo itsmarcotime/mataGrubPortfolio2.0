@@ -310,16 +310,16 @@ text:hover {
 
 
 /* Work page Start */
-.panel, .panel0, .panel1, .panel2, .panel3, .panel4 {
+.panel, .panel0, .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7 {
     --slide-panel-background-color: var(--projectblack);
 }
-#btn, #btn0, #btn1, #btn2, #btn3, #btn4 {
+#btn, #btn0, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7 {
     cursor: pointer;
 }
 .workContainer {
     width: 40vw;
 }
-#closeBtn, #closeBtn0, #closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4 {
+#closeBtn, #closeBtn0, #closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4, #closeBtn5, #closeBtn6, #closeBtn7 {
     text-decoration: underline;
     cursor: pointer;
     color: var(--projectgreen);
