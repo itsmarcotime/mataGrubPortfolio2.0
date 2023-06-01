@@ -310,16 +310,16 @@ text:hover {
 
 
 /* Work page Start */
-.panel, .panel0, .panel1, .panel2 {
+.panel, .panel0, .panel1, .panel2, .panel3, .panel4 {
     --slide-panel-background-color: var(--projectblack);
 }
-#btn, #btn0, #btn1, #btn2 {
+#btn, #btn0, #btn1, #btn2, #btn3, #btn4 {
     cursor: pointer;
 }
 .workContainer {
     width: 40vw;
 }
-#closeBtn, #closeBtn0, #closeBtn1, #closeBtn2 {
+#closeBtn, #closeBtn0, #closeBtn1, #closeBtn2, #closeBtn3, #closeBtn4 {
     text-decoration: underline;
     cursor: pointer;
     color: var(--projectgreen);
@@ -343,6 +343,12 @@ text:hover {
     color: var(--projectwhite);
     font-size: 20px;
     font-weight: bold;
+}
+.workHashTag {
+    color: var(--projectwhite);
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
 }
 .workText {
     text-align: center;
@@ -386,7 +392,7 @@ text:hover {
     border-radius: 30px;
 }
 .imageOverlay:hover {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 .ImageButton {
     background-color: var(--projectblack);
