@@ -417,6 +417,7 @@ text:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .contact {
     display: flex;
@@ -431,15 +432,20 @@ text:hover {
     margin: 20px;
 }
 .textContainer {
-    margin-top: 28px;
+    margin-top: 10px;
 }
 .contactTitle {
     color: var(--projectwhite);
     font-size: 20px;
     font-weight: bold;
 }
+.contactText {
+    font-size: 15px;
+}
 .contactTitleBold {
     font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 /* Contact Page End */
 
