@@ -410,9 +410,38 @@ text:hover {
     color: var(--projectblack);
     background-color: var(--projectgreen);
 }
-
 /* Work page End */
 
+/* Contact Page Start */
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33rem;
+    margin: 40px;
+}
+.iconClassContact {
+    color: var(--projectwhite);
+    font-size: 50px;
+    margin: 20px;
+}
+.textContainer {
+    margin-top: 28px;
+}
+.contactTitle {
+    color: var(--projectwhite);
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactTitleBold {
+    font-weight: bold;
+}
+/* Contact Page End */
 
 
 /* Media queries Start */
