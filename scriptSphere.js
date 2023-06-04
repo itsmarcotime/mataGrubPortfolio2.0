@@ -13,8 +13,10 @@ const myTags = [
     "ES6",
     "Python",
     "Flask",
+    "SQLalchemy",
     "Git",
     "GitHub",
+    "MataGrub"
   ];
   
   var tagCloud = TagCloud(".content", myTags, {
@@ -24,7 +26,7 @@ const myTags = [
     // animation speed
     // slow, normal, fast
     maxSpeed: "fast",
-    initSpeed: "fast",
+    initSpeed: "normal",
   
     // 0 = top
     // 90 = left
@@ -34,4 +36,3 @@ const myTags = [
     // interact with cursor move on mouse out
     keep: true,
   });
-  

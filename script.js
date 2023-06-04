@@ -42,4 +42,3 @@ buttons.forEach((button, i) => {
         panels[i].setAttribute('open', 'false');
     });
 });
-
