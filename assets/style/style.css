@@ -306,6 +306,9 @@ text:hover {
     font-weight: bold;
     font-size: 20px;
 }
+.aboutDates {
+    text-align: center;
+}
 /* about page end */
 
 
