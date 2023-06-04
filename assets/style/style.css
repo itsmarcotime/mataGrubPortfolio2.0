@@ -412,6 +412,7 @@ text:hover {
 }
 /* Work page End */
 
+
 /* Contact Page Start */
 .contactContainer {
     display: flex;
@@ -448,6 +449,29 @@ text:hover {
     padding: 10px;
 }
 /* Contact Page End */
+
+
+/* More Page Start */
+.moreTitle {
+    text-align: center;
+}
+
+.tagcloud {
+    color: var(--projectgreen);
+    font-size: 20px;
+    font-weight: 650;
+    
+}
+
+.tagcloud--item:hover {
+    color: var(--projectwhite);
+    cursor: pointer;
+    text-shadow: 0px 0px 5px var(--projectgreen);
+}
+.sphereBox {
+    text-align: center;
+}
+/* More Page End */
 
 
 /* Media queries Start */
