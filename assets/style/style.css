@@ -18,6 +18,20 @@ body {
     height: 100vh;
 }
 
+/* Cursor stuff Start */
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--projectgreen);
+}
+.cursor.large {
+    
+}
+/* Cursor stuff Start */
+
+
 /* Scroll Bar Start */
 ::-webkit-scrollbar {
     width: 12px;
