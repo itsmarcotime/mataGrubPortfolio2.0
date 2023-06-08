@@ -1,5 +1,5 @@
 ## MataGrub
-Marco Mata's Portfolio website!
+Marco Mata's Portfolio website!<br>
 created by Marco Mata
 
 ## Preview
@@ -22,7 +22,7 @@ This version of the application was built using HTML, CSS, & JavaScript.
 Unfortunatly, I will not be accepting help for this project.
 
 ## Usage
-Live website: 
+Live website: https://itsmarcotime.github.io/mataGrubPortfolio2.0/
 
 ## Questions
 Questions? <br /> 
