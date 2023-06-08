@@ -13,7 +13,7 @@ document.addEventListener("mousemove", (e) => {
           cursor.style.left = leftPosition + "px";
           cursor.style.top = topPosition + "px";
           isMoving = false;
-        }, 30);
+        }, 20);
     }
 });
 

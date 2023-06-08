@@ -11,6 +11,7 @@
     font-family: 'Blorado', sans-serif;
     font-size: .98em;
     font-weight: lighter;
+    cursor: url('../images/custom-cursor6.0.png'), auto;
 }
 body {
     background: var(--projectblack);
