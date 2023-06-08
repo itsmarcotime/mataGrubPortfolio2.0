@@ -1,9 +1,9 @@
 ## MataGrub
-Welcome to Marco Mata's Portfolio website!
+Marco Mata's Portfolio website!
 created by Marco Mata
 
 ## Preview
-![Marco Mata Portfolio](https://user-images.githubusercontent.com/101440634/206098710-85b9188d-a910-45f7-ab1d-ef1a23f8fd2c.png)
+![image](https://github.com/itsmarcotime/mataGrubPortfolio2.0/assets/101440634/5b695428-a9ce-4b84-bad1-36d2023703c5)
 
 ## Table of Contents
 1. [Description](#description)

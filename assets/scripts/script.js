@@ -1,10 +1,12 @@
 // navbar stuff
 const menu = document.querySelector("#mobileMenu");
 const menuLinks = document.querySelector(".navMenu");
+const linkContainer = document.querySelector(".navContainer");
 
 menu.addEventListener("click", () => {
   menu.classList.toggle("isActive");
   menuLinks.classList.toggle("active");
+  linkContainer.classList.toggle("active");
 });
 
 // mataGrub logo

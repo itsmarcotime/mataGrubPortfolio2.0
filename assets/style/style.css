@@ -34,7 +34,7 @@ body {
     height: 70px;
     width: 70px;
 }
-/* Cursor stuff Start */
+/* Cursor stuff End */
 
 
 /* Scroll Bar Start */
@@ -50,6 +50,7 @@ body {
     border-radius: 10px;
 }
 /* Scroll Bar End */
+
 
 /* Nav styles Start */
 .navContainer {
@@ -536,13 +537,15 @@ text:hover {
     }
     #navBarLogo {
         margin-left: 20px;
-
     }
     .navMenu.active {
         background: var(--projectgrey);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
+    }
+    .navContainer.active {
+        margin-bottom: 210px;
     }
     .navLinks {
         text-align: center;
@@ -555,7 +558,6 @@ text:hover {
         color: var(--projectwhite);
         transition: all 0.4s ease-out;
     }
-
     .navBar {
         width: 100%;
     }
@@ -584,5 +586,51 @@ text:hover {
     /* Nav styles End */
 
 
+    /* Welcome start */
+    .homeText {
+        padding: 0;
+        line-height: 33px;
+        margin-top: 40px;
+    }
+    .Image {
+        width: 334px;
+        height: 350px;
+    }
+    /* Welcome End */
+
+
+    /* Work Start */
+    .panelImg {
+        width: 220px;
+        height: 100px;
+    }
+    /* Work End */
+}
+@media screen and (max-width: 415px) {
+    /* Welcome start */
+    #welcome3 {
+        padding-left: 6%;
+    }
+    /* Welcome End */
+
+    /* Work Start */
+    .panelImg {
+        width: 150px;
+        height: 75px;
+    }
+    .workImg {
+        padding-left: 7px;
+    }
+    .Image {
+        width: 310px;
+    }
+    /* Work End */
+}
+@media screen and (max-width: 391px) {
+    /* Work Start */
+    .workImg {
+        padding-left: 2px;
+    }
+    /* Work End */
 }
 /* Media queries End */
