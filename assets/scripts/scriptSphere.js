@@ -16,7 +16,9 @@ const myTags = [
     "SQLalchemy",
     "Git",
     "GitHub",
-    "MataGrub"
+    "MataGrub",
+    "C++",
+    "Developer"
   ];
   
   var tagCloud = TagCloud(".content", myTags, {
